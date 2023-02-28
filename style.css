@@ -1,0 +1,173 @@
+* {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.player_options {
+  height: 100vh;
+  background-image: url(/img/road_2.jpg);
+}
+.player_options .hazir_ol {
+  width: 250px;
+  position: absolute;
+  top: 20%;
+  animation: hazirol 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes hazirol {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 42%;
+  }
+}
+.player_options .aciklama {
+  width: 500px;
+  position: absolute;
+  bottom: 40%;
+  left: 33%;
+  animation: aciklama 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes aciklama {
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: 55%;
+  }
+}
+.player_options .loading_car {
+  width: 300px;
+  position: absolute;
+  bottom: 10%;
+  animation: car1 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes car1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 40%;
+  }
+}
+.player_options .player_formation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.player_options .player_formation .player_formation_form {
+  width: 70%;
+  display: inline-flex;
+  justify-content: center !important;
+  align-items: center;
+}
+.player_options .player_formation .player_formation_form label {
+  margin-right: 0.5rem;
+}
+.player_options .player_formation .player_formation_form select {
+  width: 80px;
+  height: 40px !important;
+  text-align: center;
+  margin-right: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.player_options .player_formation .player_formation_form button {
+  background-color: crimson;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: small;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.play_ground {
+  opacity: 0;
+  display: none;
+  height: 100vh;
+  transition: opacity 1s ease-in-out;
+  background-image: url(/img/road_2.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  animation: indek 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes indek {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+.play_ground .game_section {
+  height: 100vh;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+.play_ground .game_section .race .race_play {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.play_ground .game_section .race .race_play .cevap_btn {
+  background-color: crimson;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: small;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.play_ground .game_section .race .race_play .alert-success {
+  margin: 0 !important;
+  background-color: aquamarine;
+  color: white;
+  padding: 0.2rem;
+  display: none;
+  position: absolute;
+  top: 8px;
+}
+.play_ground .game_section .race .race_play .alert-danger {
+  margin: 0 !important;
+  background-color: brown;
+  color: white;
+  padding: 0.2rem;
+  display: none;
+  position: absolute;
+  top: 8px;
+}
+.play_ground .game_section .race .race_play form {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 40%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgba(0, 0, 0, 0.233);
+  margin-top: 3rem;
+}
+.play_ground .game_section .race .race_play form input {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid;
+}
+.play_ground .game_section .race .race_play form p {
+  margin: 0 !important;
+  font-weight: bold;
+}
+.play_ground .game_section .car {
+  width: 250px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}/*# sourceMappingURL=style.css.map */

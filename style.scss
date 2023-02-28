@@ -1,0 +1,189 @@
+*{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.player_options{
+    height: 100vh;
+    background-image: url(/img/road_2.jpg);
+    // background: rgb(201,181,127);
+    // background: linear-gradient(180deg, rgba(201,181,127,1) 17%, rgba(226,210,132,1) 57%, rgba(200,132,43,1) 100%);
+    .hazir_ol{
+        width: 250px;
+        position: absolute;
+        top: 20%;
+        animation: hazirol 2s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes hazirol {
+        from {left: 0%;}
+        to {left:42% ; }
+    }
+
+    .aciklama{
+        width: 500px;
+        position: absolute;
+        bottom: 40%;
+        left: 33%;
+        animation: aciklama 4s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes aciklama {
+        from {bottom: 0%;}
+        to {bottom:55%; }
+    }
+
+    .loading_car{
+        width: 300px;
+        position: absolute;
+        bottom: 10%;
+        animation: car1 5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes car1  {
+        from {left: 0%;}
+        to {left:40%; }
+    }
+        .player_formation{
+        display: flex;
+        justify-content:center;
+        width: 100%;
+        .player_formation_form{
+            width: 70%;
+            display: inline-flex;
+            justify-content: center !important;
+            align-items: center;
+            label{
+                margin-right: .5rem;
+            }
+            select{
+                width: 80px;
+                height: 40px !important;
+                text-align: center;
+                margin-right: 1rem;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            }
+            button{
+                background-color: crimson;
+                color: white;
+                padding: 8px;
+                border-radius: 10px;
+                font-size: small;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            }
+        }
+    }
+}
+
+
+
+.play_ground{
+    opacity: 0;
+    display: none;
+    height: 100vh;
+    transition: opacity 1s ease-in-out;
+    background-image: url(/img/road_2.jpg);
+    background-size: contain;
+    background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    animation: indek 3s;
+    animation-fill-mode: forwards;
+    @keyframes indek {
+        from {opacity: 0;}
+        to {opacity: 2; }
+    }
+
+    .game_section{
+        height: 100vh;
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        overflow: hidden;
+        .race{
+            .race_play{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                .cevap_btn{
+                    background-color: crimson;
+                    color: white;
+                    padding: 8px;
+                    border-radius: 10px;
+                    font-size: small;
+                    border: none;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                }
+                .alert-success{
+                    margin: 0 !important;
+                    background-color: aquamarine;
+                    color: white;
+                    padding: .2rem;
+                    display:none;
+                    position: absolute;
+                    top: 8px;
+                }
+                .alert-danger{
+                    margin: 0 !important;
+                    background-color:brown;
+                    color: white;
+                    padding: .2rem;
+                    display: none;
+                    position: absolute;
+                    top: 8px;
+                }
+                form{
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 40%;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    align-items: center;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    background-color: rgba(0, 0, 0, 0.233);
+                    margin-top: 3rem;
+                    input{
+                        padding: .5rem;
+                        border: none;
+                        border-bottom: 1px solid ;
+                    }
+                    p{
+                        margin: 0 !important;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .car{
+            width: 250px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            // animation: mymove 10s;
+            // animation-fill-mode: forwards;
+            
+        }
+        // @keyframes mymove {
+        //     from {left: 0%;}
+        //     to {left: 0%;}
+        // }
+
+        // @keyframes mymove2  {
+        //     from {left: 0%;}
+        //     to {left: 10%;}
+        // }
+
+        // @keyframes mymove3  {
+        //     from {left: 10%;}
+        //     to {left: 20%;}
+        // }
+
+        // @keyframes mymove4  {
+        //     from {left: 20%;}
+        //     to {left: 30%;}
+        // }
+    }
+}
+
